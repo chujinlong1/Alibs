@@ -14,6 +14,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "ALibs"
+rootProject.name = "Alibs"
 include ':bluetooth-spp'
 include ':adialog'
