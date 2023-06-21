@@ -68,6 +68,7 @@ public class BluetoothKit {
         }
     }
 
+    @SuppressLint("MissingPermission")
     public boolean isEnabled() {
         return btAdapter == null ? false : btAdapter.isEnabled();
     }
