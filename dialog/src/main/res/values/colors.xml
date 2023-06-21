@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="dark">#353535</color>
+    <color name="black">#000</color>
+    <color name="empty">#00000000</color>
+    <color name="waitDialogBackgroundDark">#E0181818</color>
+    <color name="dialogButtonIOSLightPress">#0f000000</color>
+    <color name="dialogSplitIOSLight">#2c000000</color>
+    <color name="dialogButtonIOSNormal">#007aff</color>
+
+    <color name="dialogBkgIOSLight">#F3F4F5F6</color>
+    <color name="whiteAlpha50">#80FFFFFF</color>
+    <color name="whiteAlpha30">#4DFFFFFF</color>
+    <color name="whiteAlpha10">#1AFFFFFF</color>
+    <color name="blackAlpha30">#4D000000</color>
+    <color name="blackAlpha10">#1A000000</color>
+    <color name="notificationNormal">#353535</color>
+    <color name="notificationError">#e74e63</color>
+    <color name="notificationWarning">#ef8e43</color>
+    <color name="notificationFinish">#53ae5d</color>
+    <color name="tipTextColor">#8f8f8f</color>
+</resources>
