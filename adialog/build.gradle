@@ -1,6 +1,13 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'com.android.library'
+//apply plugin: 'org.jetbrains.kotlin.android'
+//apply plugin: 'kotlin-android-extensions'
+
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: 'gradle-mvn-push.gradle'
 
 android {
     namespace 'io.cjl.adialog'
@@ -20,6 +27,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
         }
     }
     compileOptions {

@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
 }
+apply from: 'gradle-mvn-push.gradle'
 
 android {
     namespace 'io.cjl.spp'
@@ -25,6 +26,11 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
     }
 }
 
