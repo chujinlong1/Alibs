@@ -3,7 +3,7 @@ apply plugin: 'signing'
 
 ext {
     VERSION_CODE = 1
-    VERSION_NAME = "1.0.0-RELEASE"
+    VERSION_NAME = "1.0.1-RELEASE"
     GROUP = "io.github.chujinlong1"
     POM_NAME = "filtertab"
     ARTIFACT_ID = "filtertab"
@@ -21,7 +21,7 @@ ext {
     POM_DEVELOPER_NAME = "chujl"
 
     NEXUS_USERNAME = "chujl"
-    NEXUS_PASSWORD = ""
+    NEXUS_PASSWORD = "1qaz2WSX3edc,"
     FIRST_RELEASE_URL = "https://s01.oss.sonatype.org/content/repositories/releases/"
     RELEASE_REPOSITORY_URL = "https://s01.oss.sonatype.org/content/groups/staging/"
     SNAPSHOT_REPOSITORY_URL ="https://s01.oss.sonatype.org/content/repositories/snapshots/"

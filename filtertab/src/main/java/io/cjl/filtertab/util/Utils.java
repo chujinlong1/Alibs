@@ -142,7 +142,7 @@ public class Utils {
      * @return true 存在, false 不存在
      */
     public static boolean deviceHasNavigationBar() {
-        boolean haveNav = false;
+        boolean haveNav = true;
         try {
             //1.通过WindowManagerGlobal获取windowManagerService
             // 反射方法：IWindowManager windowManagerService = WindowManagerGlobal.getWindowManagerService();
