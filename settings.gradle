@@ -4,6 +4,7 @@ pluginManagement {
         jcenter()
         mavenCentral()
         gradlePluginPortal()
+//        maven { url "https://maven.google.com" }
     }
 }
 dependencyResolutionManagement {
@@ -12,9 +13,15 @@ dependencyResolutionManagement {
         google()
         jcenter()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
+//        maven { url "https://maven.google.com" }
+//        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
     }
 }
 rootProject.name = "Alibs"
+include ':app'
 include ':bluetooth-spp'
 include ':adialog'
 include ':crash'
+include ':autils'
+include ':filtertab'
