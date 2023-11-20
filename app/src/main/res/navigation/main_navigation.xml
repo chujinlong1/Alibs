@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/home_destination"
+            android:id="@+id/main_navigation">
+
+    <fragment
+            android:id="@+id/home_destination"
+            android:name="io.cjl.app.ui.fragment.HomeFragment"
+            android:label="home_fragment"
+            tools:layout="@layout/fragment_home">
+
+        <action
+                android:id="@+id/action_home_to_dialog"
+                app:destination="@id/dialog_destination" />
+
+        <action
+                android:id="@+id/action_dialog_to_filter"
+                app:destination="@id/filter_destination" />
+    </fragment>
+    <fragment
+            android:id="@+id/dialog_destination"
+            android:name="io.cjl.app.ui.fragment.DialogFragment"
+            android:label="dialog_fragment"
+            tools:layout="@layout/fragment_dialog">
+    </fragment>
+    <fragment
+            android:id="@+id/filter_destination"
+            android:name="io.cjl.app.ui.fragment.FilterFragment"
+            android:label="filter_fragment"
+            tools:layout="@layout/fragment_filter">
+    </fragment>
+</navigation>

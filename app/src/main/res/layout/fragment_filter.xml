@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+        >
+
+            <io.cjl.app.widget.TitleToolBar
+                    android:id="@+id/v_title_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title='筛选演示' />
+
+            <io.cjl.filtertab.view.FilterTabView
+                    android:id="@+id/ftb_filter"
+                    app:tab_arrow_select_color="#666666"
+                    app:tab_arrow_unselect_color="#666666"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tool_bar"
+                    android:background="@color/white"
+                    app:color_main="#00716B"
+                    app:btn_solid_unselect_color="#F5F5F5"
+                    app:btn_corner_radius="24dp"
+                    app:btn_stroke_select_color="#44A69B"
+                    app:btn_stroke_unselect_color="#F5F5F5"
+                    app:btn_text_select_color="#44A69B"
+                    app:btn_text_unselect_color="#666666"
+                    app:tab_text_style="0"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

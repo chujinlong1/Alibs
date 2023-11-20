@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                <io.cjl.app.widget.TitleToolBar
+                        android:id="@+id/v_title_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:title='弹窗演示' />
+
+                <Button
+                        android:id="@+id/btn_alter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="普通弹窗"
+                        android:layout_marginTop="10dp"
+                        />
+
+                <Button
+                        android:id="@+id/btn_alter1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="普通弹窗"
+                        android:layout_marginTop="10dp"
+                />
+
+                <Button
+                        android:id="@+id/btn_alter_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="竖直弹窗"
+                        android:layout_marginTop="10dp"
+                />
+
+                <Button
+                        android:id="@+id/btn_alter_vertical1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="竖直弹窗"
+                        android:layout_marginTop="10dp"
+                />
+
+                <Button
+                        android:id="@+id/btn_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="底部弹窗"
+                        android:layout_marginTop="10dp"
+                />
+
+                <Button
+                        android:id="@+id/btn_bottom1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="底部弹窗"
+                        android:layout_marginTop="10dp"
+                />
+
+                <Button
+                        android:id="@+id/btn_custom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="自定义弹窗"
+                        android:layout_marginTop="10dp"
+                />
+
+            </LinearLayout>
+    </ScrollView>
+</layout>
