@@ -18,6 +18,10 @@
         <action
                 android:id="@+id/action_dialog_to_filter"
                 app:destination="@id/filter_destination" />
+
+        <action
+            android:id="@+id/action_home_to_dev"
+            app:destination="@id/dev_destination" />
     </fragment>
     <fragment
             android:id="@+id/dialog_destination"
@@ -30,5 +34,11 @@
             android:name="io.cjl.app.ui.fragment.FilterFragment"
             android:label="filter_fragment"
             tools:layout="@layout/fragment_filter">
+    </fragment>
+    <fragment
+        android:id="@+id/dev_destination"
+        android:name="io.cjl.app.ui.fragment.DevFragment"
+        android:label="dev_fragment"
+        tools:layout="@layout/fragment_dev">
     </fragment>
 </navigation>

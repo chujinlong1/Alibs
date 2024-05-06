@@ -72,6 +72,7 @@ dependencies {
     implementation "com.google.dagger:hilt-android:2.43.2"
     implementation project(path: ':adialog')
     implementation project(path: ':filtertab')
+    implementation project(path: ':socket')
     kapt "com.google.dagger:hilt-compiler:2.43.2"
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
     testImplementation 'junit:junit:4.13.2'

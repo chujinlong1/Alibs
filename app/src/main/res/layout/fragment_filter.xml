@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
 >
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <LinearLayout
-                android:id="@+id/container"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
         >
 
-            <io.cjl.app.widget.TitleToolBar
-                    android:id="@+id/v_title_bar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:title='筛选演示' />
-
-            <io.cjl.filtertab.view.FilterTabView
+        <io.cjl.app.widget.TitleToolBar
+            android:id="@+id/v_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title='筛选演示'
+            tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_title_bar">
+                <io.cjl.filtertab.view.FilterTabView
                     android:id="@+id/ftb_filter"
                     app:tab_arrow_select_color="#666666"
                     app:tab_arrow_unselect_color="#666666"
@@ -32,8 +37,20 @@
                     app:btn_stroke_unselect_color="#F5F5F5"
                     app:btn_text_select_color="#44A69B"
                     app:btn_text_unselect_color="#666666"
-                    app:tab_text_style="0"/>
+                    app:tab_text_style="0"
+                    tools:ignore="MissingConstraints" />
 
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/v_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:overScrollMode="never"
+                    android:fitsSystemWindows="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                </androidx.core.widget.NestedScrollView>
         </LinearLayout>
-    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

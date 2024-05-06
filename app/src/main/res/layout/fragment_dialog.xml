@@ -2,22 +2,34 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <io.cjl.app.widget.TitleToolBar
+            android:id="@+id/v_title_bar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            app:title='弹窗演示'
+            tools:ignore="MissingConstraints" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/v_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:overScrollMode="never"
+            android:fitsSystemWindows="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_title_bar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
             <LinearLayout
-                    android:id="@+id/container"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    >
-
-                <io.cjl.app.widget.TitleToolBar
-                        android:id="@+id/v_title_bar"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:title='弹窗演示' />
-
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
                 <Button
                         android:id="@+id/btn_alter"
                         android:layout_width="match_parent"
@@ -73,7 +85,7 @@
                         android:text="自定义弹窗"
                         android:layout_marginTop="10dp"
                 />
-
             </LinearLayout>
-    </ScrollView>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

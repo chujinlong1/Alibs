@@ -27,6 +27,26 @@ class HomeFragment: BaseFragment() {
                 HomeFragmentDirections.actionDialogToFilter()
             )
         }
+
+
+        binding.btnDev.setOnClickListener {
+            Navigation.findNavController(it).navigate(
+                HomeFragmentDirections.actionHomeToDev()
+            )
+        }
+
+        binding.btnTest.setOnClickListener {
+            Navigation.findNavController(it).navigate(
+                HomeFragmentDirections.actionHomeToDev()
+            )
+        }
+
+        binding.btnAd.setOnClickListener {
+            Navigation.findNavController(it).navigate(
+                HomeFragmentDirections.actionHomeToDev()
+            )
+        }
+
         return binding.root
     }
 }

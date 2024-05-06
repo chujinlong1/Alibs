@@ -1,16 +1,10 @@
-//apply plugin: 'com.android.library'
-//apply plugin: 'org.jetbrains.kotlin.android'
-//apply plugin: 'kotlin-android-extensions'
-
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
-apply from: 'gradle-mvn-push.gradle'
-
 android {
-    namespace 'io.cjl.adialog'
+    namespace 'io.cjl.socket'
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -39,9 +33,6 @@ android {
 }
 
 dependencies {
-
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"
